@@ -5,16 +5,17 @@ namespace App\Controllers;
 use App\Service\InvoiceService;
 use CodeIgniter\Controller;
 use Config\Myob;
-use Config\XeroAPI;
+use Config\ThirdPartyAPI\XeroAPI;
 
 class MyobController extends Controller
 {
 
-
     public function retrieveInvoices()
     {
+        $xeroAPIConfig = new XeroAPI();
+        $myobAPIConfig = new Myob();
 
-        $invoiceService = new InvoiceService(new Myob());
+        $invoiceService = new InvoiceService($xeroAPIConfig);
 
         // Implementation for retrieving invoices from MYOB API
         // Example: $invoices = $this->myob->getInvoices();
