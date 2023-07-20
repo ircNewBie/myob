@@ -1,0 +1,90 @@
+CRITICAL - 2023-07-18 04:09:28 --> Too few arguments to function App\Controllers\MyobController::__construct(), 0 passed in /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php on line 908 and exactly 1 expected
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(908): App\Controllers\MyobController->__construct()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-18 04:10:17 --> Too few arguments to function App\Controllers\MyobController::__construct(), 0 passed in /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php on line 908 and exactly 1 expected
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(908): App\Controllers\MyobController->__construct()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-18 04:10:52 --> Too few arguments to function App\Controllers\MyobController::__construct(), 0 passed in /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php on line 908 and exactly 1 expected
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(908): App\Controllers\MyobController->__construct()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-18 04:11:07 --> Too few arguments to function App\Controllers\MyobController::__construct(), 0 passed in /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php on line 908 and exactly 1 expected
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(908): App\Controllers\MyobController->__construct()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-18 04:18:54 --> Too few arguments to function App\Controllers\MyobController::__construct(), 0 passed in /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php on line 908 and exactly 1 expected
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(908): App\Controllers\MyobController->__construct()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-18 20:21:13 --> Class "App\Service\InvoiceService" not found
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\MyobController->retrieveInvoices()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyobController))
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-18 20:21:31 --> Class "App\Service\InvoiceService" not found
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\MyobController->retrieveInvoices()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyobController))
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-18 20:42:28 --> Class "App\Service\InvoiceService" not found
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\MyobController->retrieveInvoices()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyobController))
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-18 20:43:38 --> Class "App\Service\InvoiceService" not found
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\MyobController->retrieveInvoices()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyobController))
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-18 20:44:38 --> Class "App\Service\InvoiceService" not found
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\MyobController->retrieveInvoices()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyobController))
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-18 20:47:01 --> Class "App\Service\InvoiceService" not found
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\MyobController->retrieveInvoices()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyobController))
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-18 20:58:39 --> Class "App\Service\InvoiceService" not found
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\MyobController->retrieveInvoices()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyobController))
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-18 21:05:26 --> Class "App\Service\InvoiceService" not found
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\MyobController->retrieveInvoices()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyobController))
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-18 21:08:10 --> Class "App\Service\InvoiceService" not found
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\MyobController->retrieveInvoices()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyobController))
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-18 21:11:12 --> Class "App\Service\InvoiceService" not found
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\MyobController->retrieveInvoices()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyobController))
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
