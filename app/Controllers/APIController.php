@@ -26,18 +26,8 @@ class APIController extends Controller
 
     public function openAPIAuthorizationRequest()
     {
-        $clientID = $this->apiConfig->clientID;
-        $redirectURI = $this->apiConfig->redirectURI;
         $baseUri = $this->apiConfig->baseURI;
-        $scopes = $this->apiConfig->scopes;
-
-        // Query parameters for the request
-        $queryParams = [
-            'response_type' => 'code',
-            'client_id' => $clientID,
-            'redirect_uri' => $redirectURI,
-            'scope' => $scopes
-        ];
+        $queryParams = $this->apiConfig->queryParams;
 
         // Construct the full URL
         $url = $baseUri . 'authorize?' . http_build_query($queryParams);
@@ -52,12 +42,9 @@ class APIController extends Controller
 
     public function getAPIAuthorizationCode()
     {
-        $code = $this->request->getVar('code');
+        $getParams = $this->request->getGet();
 
-        return $this->response->setJSON([
-            'message' => 'Your authorization code request.',
-            'code' => $code
-        ]);
+        return $this->response->setJSON($getParams);
     }
 
 

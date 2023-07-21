@@ -7,11 +7,14 @@ use CodeIgniter\Config\DotEnv;
 
 class XeroAPI extends BaseConfig
 {
-    public $clientID;
+    private $clientID;
+    private $redirectURI;
+    private $scopes;
+
     public $clientSecret;
-    public $redirectURI;
+    public $accessToken;
     public $baseURI;
-    public $scopes;
+    public $queryParams;
 
     public function __construct()
     {
@@ -19,10 +22,18 @@ class XeroAPI extends BaseConfig
         $dotenv->load();
 
         // Get the values from the .env file
-        $this->clientID = $_ENV['XERO_CLIENT_ID'];
         $this->clientSecret = $_ENV['XERO_CLIENT_SECRET'];
         $this->baseURI = $_ENV['XERO_BASE_URI'];
-        $this->redirectURI = $_ENV['XERO_REDIRECT_URI'];
-        $this->scopes =  'accounting.transactions';
+
+        $clientID = $_ENV['XERO_CLIENT_ID'];
+        $redirectURI = $_ENV['XERO_REDIRECT_URI'];
+        $scopes =  'accounting.transactions';
+
+        $this->queryParams = [
+            'response_type' => 'code',
+            'client_id' => $clientID,
+            'redirect_uri' => $redirectURI,
+            'scope' => $scopes
+        ];
     }
 }
