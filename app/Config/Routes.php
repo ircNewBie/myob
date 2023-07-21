@@ -33,7 +33,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-$routes->get('myob/retrieve-invoices', 'MyobController::retrieveInvoices');
+$routes->get('api/retrieve-invoices', 'APIController::retrieveInvoices');
+$routes->get('api/get-authorization-code', 'APIController::getAPIAuthorizationCode');
+$routes->get('api/request-authorization', 'APIController::openAPIAuthorizationRequest');
 
 /*
  * --------------------------------------------------------------------
