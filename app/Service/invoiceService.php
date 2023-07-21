@@ -2,9 +2,6 @@
 
 namespace App\Service;
 
-use Config\Myob;
-use Config\ThirdPartyAPI\XeroAPI;
-
 class InvoiceService
 {
     private $clientID;
@@ -13,12 +10,13 @@ class InvoiceService
     private $baseURI;
 
 
-    public function __construct(XeroAPI $apiConfig)
+    public function __construct($apiConfig)
     {
         $this->clientID = $apiConfig->clientID;
         $this->clientSecret = $apiConfig->clientSecret;
         $this->baseURI = $apiConfig->baseURI;
     }
+
 
     public function getInvoices()
     {
