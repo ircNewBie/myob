@@ -1,0 +1,50 @@
+CRITICAL - 2023-07-21 03:55:19 --> Undefined array key "code"
+#0 /Users/user/dev/hivegroup/myob/app/Controllers/APIController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/user/dev...', 54)
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\APIController->getAPIAuthorizationCode()
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIController))
+#3 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-21 03:55:40 --> Undefined array key "code"
+#0 /Users/user/dev/hivegroup/myob/app/Controllers/APIController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/user/dev...', 54)
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\APIController->getAPIAuthorizationCode()
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIController))
+#3 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-21 03:56:34 --> Undefined array key "code"
+#0 /Users/user/dev/hivegroup/myob/app/Controllers/APIController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/user/dev...', 54)
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\APIController->getAPIAuthorizationCode()
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIController))
+#3 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-21 03:56:38 --> Undefined array key "code"
+#0 /Users/user/dev/hivegroup/myob/app/Controllers/APIController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Users/user/dev...', 54)
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\APIController->getAPIAuthorizationCode()
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIController))
+#3 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-21 03:56:51 --> URI must be a string or UriInterface
+#0 /Users/user/dev/hivegroup/myob/vendor/guzzlehttp/guzzle/src/Client.php(161): GuzzleHttp\Psr7\Utils::uriFor(Array)
+#1 /Users/user/dev/hivegroup/myob/vendor/guzzlehttp/guzzle/src/Client.php(189): GuzzleHttp\Client->requestAsync('POST', Array, Array)
+#2 /Users/user/dev/hivegroup/myob/app/Controllers/APIController.php(70): GuzzleHttp\Client->request('POST', Array)
+#3 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\APIController->getAPIAuthorizationCode()
+#4 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIController))
+#5 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-07-21 04:03:06 --> Call to undefined method GuzzleHttp\Psr7\Response::getPost()
+#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\APIController->getAPIAuthorizationCode()
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIController))
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-07-21 04:04:17 --> Undefined variable $responseBody
+#0 /Users/user/dev/hivegroup/myob/app/Controllers/APIController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/user/dev...', 82)
+#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\APIController->getAPIAuthorizationCode()
+#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIController))
+#3 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

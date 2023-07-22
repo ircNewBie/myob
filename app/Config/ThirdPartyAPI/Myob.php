@@ -17,7 +17,9 @@ class Myob extends BaseConfig
     public $accessToken;
     public $baseURI;
     public $queryParams;
-
+    public $identityConnectURL;
+    public $tokenRequestParams;
+    public $authorization;
 
 
     public function __construct()
@@ -26,14 +28,16 @@ class Myob extends BaseConfig
         $dotenv->load();
 
         $this->scopes = 'CompanyFile la.global';
+        $this->identityConnectURL = $_ENV['MYOB_IDENTITY_CONNECT_URI'];
+
 
         // Get the values from the .env file
         $this->clientSecret = $_ENV['MYOB_API_SECRET'];
         $this->baseURI = $_ENV['MYOB_BASE_URI'];
 
         $clientID = $_ENV['MYOB_API_KEY'];
-        $redirectURI = $_ENV['MYOB_REDIRECT_URI'];
-        $scopes =  'CompanyFile la.global';
+        $redirectURI = $_ENV['REDIRECT_URI'];
+        $scopes =  'CompanyFile';
 
 
         $this->queryParams = [
@@ -41,6 +45,15 @@ class Myob extends BaseConfig
             'client_id' => $clientID,
             'redirect_uri' => $redirectURI,
             'scope' => $scopes
+        ];
+
+        $this->authorization = "Basic " . '$this->base64Encode($clientID . ":" . $this->clientSecret)';
+        $this->tokenRequestParams = [
+            'grant_type' => 'authorization_code',
+            'client_id' => $clientID,
+            'code' => '',
+            'redirect_uri' => $redirectURI,
+            'client_secret' => $this->clientSecret
         ];
     }
 }

@@ -1,6 +1,0 @@
-CRITICAL - 2023-07-20 22:50:34 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::all()
-#0 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\APIController->getAPIAuthorizationCode()
-#1 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\APIController))
-#2 /Users/user/dev/hivegroup/myob/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#3 /Users/user/dev/hivegroup/myob/public/index.php(44): CodeIgniter\CodeIgniter->run()
-#4 {main}

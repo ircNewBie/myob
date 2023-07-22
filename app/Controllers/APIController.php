@@ -9,6 +9,9 @@ use CodeIgniter\Controller;
 use Config\ThirdPartyAPI\Myob;
 use Config\ThirdPartyAPI\XeroAPI;
 
+use  Exception;
+
+use GuzzleHttp\Client;
 
 class APIController extends Controller
 {
@@ -20,8 +23,8 @@ class APIController extends Controller
         $myobApiConfig =  new Myob();
 
         // -- uncomment to enable below settings.
-        $this->apiConfig =  $xeroApiConfig;
-        // $this->apiConfig =  $myobApiConfig;
+        // $this->apiConfig =  $xeroApiConfig;
+        $this->apiConfig =  $myobApiConfig;
     }
 
     public function openAPIAuthorizationRequest()
@@ -40,11 +43,44 @@ class APIController extends Controller
     }
 
 
+    /**
+     * 
+     */
     public function getAPIAuthorizationCode()
     {
         $getParams = $this->request->getGet();
+        $authCode = $getParams['code'];
+        $identityConnectURL = $this->apiConfig->identityConnectURL;
+        $tokenRequestParams = $this->apiConfig->tokenRequestParams;
 
-        return $this->response->setJSON($getParams);
+        $tokenRequestParams['code']  = $authCode;
+
+
+        // Exchange code for a Token.
+        // $url = $identityConnectURL . 'token?' . http_build_query($tokenRequestParams);
+        // var_dump($tokenRequestParams);
+
+        // try {
+        $client = new Client([
+            'base_uri' => $identityConnectURL,
+        ]);
+
+        $response = $client->request("POST", '/', [
+            'headers' => [
+                "Authorization" => $this->apiConfig->authorization,
+                "Content-Type" => 'application/x-www-form-urlencoded'
+            ],
+
+            'form_params' => $tokenRequestParams,
+        ]);
+
+
+        $response = $this->request->getPost();
+
+        return $this->response->setJSON($response);
+        // } catch (Exception $e) {
+        //     return $e->getMessage();
+        // }
     }
 
 
